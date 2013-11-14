@@ -33,23 +33,42 @@ Sensors availible
 =================
 
  GT1 - Radiator return 
+
  GT2 - Outdoor
+
  GT3 - Hot water (internal tank)
+
  GT4 - Forward
+
  GT5 - Room
+
  GT6 - Compressor
+
  GT8 - Heat fluid in
+
  GT9 - Heat fluid out
+
  GT10 - Cold fluid in
+
  GT11 - Cold fluid out
+
  GT3x - Hot water (external tank)
+
  3kW  - On/off additional heat
+
  6kW  - On/off additional heat
+
  P1   - On/off radiator pump
+
  P2   - On/off Heat carrier pump
+
  VXV  - On/off Three way valve
+
  alarm - On/off in alarm state
+
  heatpower - On/off additional heat
+
+----
 
 Credit to Jindřich Fučík for reverse engineering the protocol. Many thanks!
 
