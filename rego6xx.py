@@ -35,7 +35,7 @@ def main():
             try:
                 sensor,name = map.split(",")
             except:
-                logger.warning("Could not parse '%s'" % map)
+                logging.warning("Could not parse '%s'" % map)
                 break
             map_name[sensor] = name
     
@@ -101,7 +101,7 @@ class Rego:
         try:
             reg = self.reg[sensor]
         except:
-            logger.error("No such sensor")
+            logging.error("No such sensor")
             return False
         # make decimal:
         return float(self._read_reg(reg)) / float(10)
@@ -110,7 +110,7 @@ class Rego:
         try:
             reg = self.reg[sensor]
         except:
-            logger.error("No such sensor")
+            logging.error("No such sensor")
             return False
         return self._read_reg(reg)
 
