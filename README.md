@@ -26,7 +26,7 @@ Compressor 23.7 1384464007
 If you have a cron job that is executed regulary you could feed the data direct to Graphite with netcat like this:
 
 ```
-rego6xx.py --sensor GT2 --map-name GT2,house.temp.outdoor --sensor GT3 --map-name GT3,house.temp.hotwater --sensor GT6 --map-name GT6,house.temp.compressor --graphite | nc "graphite.logger.com 2003"
+rego6xx.py --sensor GT2 --map-name GT2,house.temp.outdoor --sensor GT3 --map-name GT3,house.temp.hotwater --sensor GT6 --map-name GT6,house.temp.compressor --graphite | nc -q0 "graphite.logger.com 2003"
 ```
 
 Sensors availible
